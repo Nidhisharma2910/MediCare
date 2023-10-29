@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MediCare</string>
+    <string name="doc9">doc9</string>
+    <string name="doc8">doc8</string>
+    <string name="doc7">doc7\n</string>
+    <string name="doc6">doc6</string>
+    <string name="doc5">doc5</string>
+    <string name="doc4">doc4</string>
+    <string name="doc3">doc3</string>
+    <string name="doc2">doc2</string>
+    <string name="doc1">doc1</string>
+</resources>

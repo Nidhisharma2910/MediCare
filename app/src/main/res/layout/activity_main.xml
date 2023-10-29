@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:background="#FFFFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/d1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="22dp"
+            android:width="102dp"
+            android:height="94dp"
+            android:contentDescription="@string/doc1"
+            android:src="@drawable/dt1"
+            app:layout_constraintBottom_toTopOf="@+id/d2"
+            app:layout_constraintEnd_toStartOf="@+id/d4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/d2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="4dp"
+            android:width="102dp"
+            android:height="174dp"
+            android:src="@drawable/dt2"
+            app:layout_constraintBottom_toTopOf="@+id/d3"
+            app:layout_constraintEnd_toStartOf="@+id/d5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d1"
+            android:contentDescription="@string/doc2" />
+
+        <ImageView
+            android:id="@+id/d3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="360dp"
+            android:src="@drawable/dt3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/d6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d2"
+            android:contentDescription="@string/doc3" />
+
+        <ImageView
+            android:id="@+id/d4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/dt4"
+            app:layout_constraintBottom_toTopOf="@+id/d5"
+            app:layout_constraintEnd_toStartOf="@+id/d7"
+            app:layout_constraintStart_toEndOf="@+id/d1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/doc4" />
+
+        <ImageView
+            android:id="@+id/d5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/dt5"
+            app:layout_constraintBottom_toTopOf="@+id/d6"
+            app:layout_constraintEnd_toStartOf="@+id/d8"
+            app:layout_constraintStart_toEndOf="@+id/d2"
+            app:layout_constraintTop_toBottomOf="@+id/d4"
+            android:contentDescription="@string/doc5" />
+
+        <ImageView
+            android:id="@+id/d6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="360dp"
+            android:src="@drawable/dt6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/d9"
+            app:layout_constraintStart_toEndOf="@+id/d3"
+            app:layout_constraintTop_toBottomOf="@+id/d5"
+            android:contentDescription="@string/doc6" />
+
+        <ImageView
+            android:id="@+id/d7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="17dp"
+            android:src="@drawable/dt7"
+            app:layout_constraintBottom_toTopOf="@+id/d8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/d4"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/doc7" />
+
+        <ImageView
+            android:id="@+id/d8"
+            android:layout_width="107dp"
+            android:layout_height="96dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="14dp"
+            android:contentDescription="@string/doc8"
+            android:src="@drawable/dt8"
+            app:layout_constraintBottom_toTopOf="@+id/d9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/d5"
+            app:layout_constraintTop_toBottomOf="@+id/d7" />
+
+        <ImageView
+            android:id="@+id/d9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="360dp"
+            android:src="@drawable/dt9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/d6"
+            app:layout_constraintTop_toBottomOf="@+id/d8"
+            android:contentDescription="@string/doc9" />
+
+        <TextView
+            android:id="@+id/get_started_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Get Started"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d9" />
+
+        <TextView
+            android:id="@+id/extra_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Doctor appointment,buy medicines,online"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/get_started_text" />
+
+        <TextView
+            android:id="@+id/extra_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="consultation with top doctor,and find nearby hospital"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extra_text" />
+
+        <Button
+            android:id="@+id/continue_with_google_button"
+            android:layout_width="297dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:text="Continue with Google"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extra_text1" />
+
+        <Button
+            android:id="@+id/continue_with_email_button"
+            android:layout_width="297dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:text="Continue with Email"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/continue_with_google_button" />
+
+        <Button
+            android:id="@+id/continue_with_apple_button"
+            android:layout_width="297dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:text="Continue with Apple"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/continue_with_email_button" />
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:text="Already have an account? "
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/continue_with_apple_button" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:text="Login"
+            android:layout_marginStart="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/login_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
