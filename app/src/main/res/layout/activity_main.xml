@@ -260,7 +260,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:text="@string/login"
-            android:textColor="#50A5AE"
+            android:textColor="@color/lightBlue"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.790"
