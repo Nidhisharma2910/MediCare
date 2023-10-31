@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:background="#FFFFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView"
+        android:layout_width="416dp"
+        android:layout_height="202dp"
+        app:cardBackgroundColor="@color/lightBlue"
+        app:cardMaxElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/notifyLogo"
+            android:layout_width="622dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="45dp"
+            android:src="@drawable/notifi" />
+
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="145dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="52dp"
+            android:text="Hello , Nidhi"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="7.70" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/searchview_backgound"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Search a Doctor or health issue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="95dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="208dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="6dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="63dp"
+            android:background="#ADD8E6"
+            android:scaleType="centerCrop"
+            android:src="@drawable/stethoscope" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/doctorCardView"
+        android:layout_width="95dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="208dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="6dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="63dp"
+            android:backgroundTint="#add8e6"
+            android:scaleType="centerCrop"
+            android:src="@drawable/plogo" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="95dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="208dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="6dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.667"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="63dp"
+            android:background="#ADD8E6"
+            android:scaleType="centerCrop"
+            android:src="@drawable/appoint" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView"
+        android:layout_width="95dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="208dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="6dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="63dp"
+            android:background="#ADD8E6"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hospital" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/doc"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="288dp"
+        android:text="Doctor"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pharmacy"
+        android:layout_width="101dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="288dp"
+        android:text="Pharmacy"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appointment"
+        android:layout_width="108dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="288dp"
+        android:text="Appointment"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hospital"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="288dp"
+        android:text="Hospital"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView2"
+        android:layout_width="410dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/lightBlue"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/doc">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="18dp"
+            android:text="Get 15%"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="45dp"
+            android:text="Discount on"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="70dp"
+            android:text="your first Chat"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="120dp"
+            android:backgroundTint="@color/white"
+            android:text="get now"
+            android:textColor="@color/lightBlue" />
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="118dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/dt2" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="169dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="508dp"
+        android:text="Top Doctors"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="148dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="508dp"
+        android:text="See all"
+        android:textColor="@color/lightBlue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="174dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="540dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="6dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="174dp"
+            android:layout_height="73dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dt4" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="174dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="540dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="6dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="163dp"
+            android:layout_height="76dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dt2" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/generalPractitioner"
+        android:layout_width="160dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="624dp"
+        android:text="General Practitioner"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HeartSurgeon"
+        android:layout_width="160dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="624dp"
+        android:text="Heart Surgeon"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/generalPractitionerText"
+        android:layout_width="160dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="648dp"
+        android:text="Dr. Manas Jha"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HeartSurgeonText"
+        android:layout_width="160dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="648dp"
+        android:text="Dr. Dhruv Jha"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
