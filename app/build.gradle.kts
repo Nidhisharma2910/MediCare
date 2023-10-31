@@ -7,6 +7,14 @@ android {
     namespace = "com.example.medicare"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+    }
+
+    buildFeatures {
+        dataBinding=true
+    }
+
     defaultConfig {
         applicationId = "com.example.medicare"
         minSdk = 24
