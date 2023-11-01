@@ -27,4 +27,8 @@
     <string name="google">Google</string>
     <string name="apple">Apple</string>
     <string name="signup">Sign up</string>
+    <string name="doctor">Doctor</string>
+    <string name="search_doctor">Search A Doctor</string>
+    <string name="recommended">Recommended</string>
+    <string name="nearby">Nearby you</string>
 </resources>
