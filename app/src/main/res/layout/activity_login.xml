@@ -6,21 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/ActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="684dp"
-        android:clickable="true"
-        android:contentDescription="@string/todo"
-        android:focusable="true"
-        app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="@color/white"
-        app:srcCompat="@drawable/baseline_back_arrow" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -36,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="76dp"
         android:text="@string/welcome_back"
         android:textColor="@color/black"
         android:textSize="40sp"
@@ -44,26 +29,25 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.036" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="23dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="8dp"
         android:text="Please login first to use Wellness Expert Feature"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216" />
-
-
+        app:layout_constraintVertical_bias="0.168" />
 
     <TextView
         android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
         android:layout_marginTop="48dp"
         android:background="@drawable/email_margin"
         android:backgroundTint="@color/lightBlue"
@@ -74,15 +58,15 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/phone"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintVertical_bias="0.203" />
 
     <TextView
         android:id="@+id/phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
         android:layout_marginEnd="76dp"
         android:padding="12dp"
         android:paddingStart="20dp"
@@ -91,13 +75,13 @@
         app:layout_constraintBottom_toBottomOf="@id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/email"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/margin"
         android:layout_width="259dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="28dp"
         android:autofillHints=""
         android:background="@drawable/email_margin"
         android:drawableStart="@drawable/baseline_email"
@@ -110,15 +94,13 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/pass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/pass"
         android:layout_width="256dp"
         android:layout_height="46dp"
-        android:layout_marginTop="376dp"
-        android:autofillHints=""
+        android:layout_marginTop="330dp"
         android:background="@drawable/email_margin"
         android:drawableStart="@drawable/baseline_lock"
         android:drawablePadding="4dp"
@@ -130,7 +112,7 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -152,8 +134,8 @@
         android:id="@+id/button"
         android:layout_width="270dp"
         android:layout_height="57dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="212dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="252dp"
         android:backgroundTint="@color/lightBlue"
         android:text="@string/signin"
         android:textColor="@color/white"
@@ -162,14 +144,14 @@
 
     <TextView
         android:id="@+id/sigin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="168dp"
+        android:layout_width="97dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="188dp"
         android:text="@string/signinwith"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="@+id/button" />
 
     <View
@@ -238,7 +220,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/google"
         app:layout_constraintTop_toBottomOf="@+id/sigin"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintVertical_bias="0.277" />
 
     <TextView
         android:id="@+id/noacc"
