@@ -7,6 +7,9 @@
     <item android:title="Doctor"
         android:id="@+id/doctor"
         android:icon="@drawable/stethoscope"/>
+    <item android:title="Cart"
+        android:id="@+id/cart"
+        android:icon="@drawable/cart"/>
     <item android:title="Profile"
         android:id="@+id/profile"
         android:icon="@drawable/ic_baseline_person_24"/>

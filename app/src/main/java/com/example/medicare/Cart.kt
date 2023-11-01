@@ -1,6 +1,5 @@
 package com.example.medicare
 
-
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,10 +16,10 @@ private const val ARG_NIDHI2 = "nidhi2"
  * Use the [Settings.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Settings : Fragment() {
+class Cart : Fragment() {
     // TODO: Rename and change types of parameters
-    var nidhi1: String? = null
-    var nidhi2: String? = null
+    private var nidhi1: String? = null
+    private var nidhi2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
