@@ -13,7 +13,7 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        val detail =findViewById<TextView>(R.id.manas_text)
+        val detail =findViewById<TextView>(R.id.textView34)
         detail.setOnClickListener{
             val intent= Intent(this,DetailActivity::class.java)
             startActivity(intent)

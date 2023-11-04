@@ -4,7 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="infoBlueColor">#0000FF</color>
     <color name="lightBlue">#ADD8E6</color>
-    <color name="green">#34a56f</color>
+    <color name="green">#50A5AE</color>
     <color name="red">#99004C</color>
-
+    <color name="grey">#808080</color>
+    <color name="light_blue">#EEF6F7</color>
 </resources>

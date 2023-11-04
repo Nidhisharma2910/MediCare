@@ -10,7 +10,7 @@ class AppointmentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_appointment)
 
-        val second = findViewById<TextView>(R.id.see)
+        val second = findViewById<TextView>(R.id.textView24)
         second.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)

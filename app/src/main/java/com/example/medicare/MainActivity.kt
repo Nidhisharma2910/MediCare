@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val login =findViewById<TextView>(R.id.login_text)
+        val login =findViewById<TextView>(R.id.textView8)
         login.setOnClickListener{
             val intent= Intent(this,LoginActivity::class.java)
             startActivity(intent)

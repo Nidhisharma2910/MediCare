@@ -6,7 +6,7 @@
         android:icon="@drawable/ic_baseline_home_24"/>
     <item android:title="Doctor"
         android:id="@+id/doctor"
-        android:icon="@drawable/stethoscope"/>
+        android:icon="@drawable/medic"/>
     <item android:title="Cart"
         android:id="@+id/cart"
         android:icon="@drawable/cart"/>
