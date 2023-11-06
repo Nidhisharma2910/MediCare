@@ -16,7 +16,7 @@
 
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/textView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -30,7 +30,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextText5"
+            android:id="@+id/editText5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -42,22 +42,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="23dp"
             android:layout_height="30dp"
-            app:layout_constraintBottom_toBottomOf="@+id/editTextText5"
-            app:layout_constraintEnd_toEndOf="@+id/editTextText5"
+            app:layout_constraintBottom_toBottomOf="@+id/editText5"
+            app:layout_constraintEnd_toEndOf="@+id/editText5"
             app:layout_constraintHorizontal_bias="0.935"
-            app:layout_constraintStart_toStartOf="@+id/editTextText5"
-            app:layout_constraintTop_toTopOf="@+id/editTextText5"
+            app:layout_constraintStart_toStartOf="@+id/editText5"
+            app:layout_constraintTop_toTopOf="@+id/editText5"
             app:layout_constraintVertical_bias="0.566"
             app:srcCompat="@drawable/_filter" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/textView25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -66,37 +66,35 @@
             android:text="@string/recommended_by_you"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+            app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
         <TextView
             android:id="@+id/textView30"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/email_margin"
             android:padding="10dp"
             android:text="@string/nearby_you"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/textView22"
-            app:layout_constraintStart_toEndOf="@+id/textView22"
-            app:layout_constraintTop_toTopOf="@+id/textView22"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
         <TextView
             android:id="@+id/textView31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/email_margin"
             android:padding="10dp"
             android:text="@string/nearby_you_"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/textView30"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.432"
             app:layout_constraintStart_toEndOf="@+id/textView30"
-            app:layout_constraintTop_toTopOf="@+id/textView30"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline7"
@@ -118,7 +116,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView34"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView25"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/dt4" />
 
@@ -136,7 +134,7 @@
             app:layout_constraintBottom_toTopOf="@+id/textView35"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView8"
-            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
         <TextView
             android:id="@+id/textView35"
@@ -389,7 +387,7 @@
             android:layout_width="15dp"
             android:layout_height="16dp"
             android:layout_marginStart="104dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="14dp"
             app:layout_constraintEnd_toStartOf="@+id/textView45"
             app:layout_constraintHorizontal_bias="0.0"
