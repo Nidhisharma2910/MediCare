@@ -1,47 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".SecondActivity">
-
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="20dp" />
-
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
 
         <TextView
             android:id="@+id/textView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="140dp"
+            android:gravity="center_horizontal|top"
             android:text="@string/doctor_"
             android:textColor="@color/black"
             android:textSize="45sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.505"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/editText5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="100dp"
             android:background="@drawable/email_margin"
             android:ems="10"
             android:hint="@string/search_a_doctor"
             android:inputType="text"
             android:padding="18dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
         <ImageView
@@ -78,6 +77,7 @@
             android:padding="10dp"
             android:text="@string/nearby_you"
             android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/textView31"
             app:layout_constraintStart_toEndOf="@+id/textView25"
             app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
@@ -189,7 +189,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="11dp"
             android:text="4.8"
             android:textSize="12dp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView18"
@@ -248,10 +248,141 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toBottomOf="@+id/imageView14"
             app:layout_constraintVertical_bias="0.07"
             tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="97dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="22dp"
+            android:background="@color/light_blue"
+            android:src="@drawable/dt4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Dr. Manas Jha"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/general_practitioner"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <ImageView
+            android:id="@+id/imageView140"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:srcCompat="@drawable/suitcase" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="64dp"
+            android:text="2 Years"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView180"
+            app:layout_constraintStart_toEndOf="@+id/imageView140"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/imageView180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="11dp"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:srcCompat="@drawable/star" />
+
+        <TextView
+            android:id="@+id/textView370"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="11dp"
+            android:text="4.8"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView180"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView380"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="$32,400"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"
+            app:layout_constraintTop_toBottomOf="@+id/view30" />
+
+        <View
+            android:id="@+id/view30"
+            android:layout_width="290dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/black"
+            android:paddingStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/imageView190"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView390"
+            app:layout_constraintStart_toEndOf="@+id/textView380"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:srcCompat="@drawable/hearticon" />
+
+
+        <TextView
+            android:id="@+id/textView390"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/recom_"
+            android:padding="10dp"
+            android:text="Chat"
+
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view30"
+            tools:ignore="TextSizeCheck" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
@@ -265,151 +396,8 @@
             app:menu="@menu/bottom_nav"
             tools:ignore="VisualLintBottomNav" />
 
-        <ImageView
-            android:id="@+id/imageView20"
-            android:layout_width="97dp"
-            android:layout_height="99dp"
-            android:background="@color/light_blue"
-            app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.172"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/textView38"
-            app:layout_constraintVertical_bias="0.138"
-            app:srcCompat="@drawable/dt4" />
 
-        <TextView
-            android:id="@+id/textView40"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dr. Manas Jha"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintHorizontal_bias="0.092"
-            app:layout_constraintStart_toEndOf="@+id/imageView20"
-            app:layout_constraintTop_toBottomOf="@+id/imageView19"
-            app:layout_constraintVertical_bias="0.139" />
-
-        <TextView
-            android:id="@+id/textView41"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/general_practitioner"
-            app:layout_constraintEnd_toEndOf="@+id/textView40"
-            app:layout_constraintHorizontal_bias="0.03"
-            app:layout_constraintStart_toStartOf="@+id/textView40"
-            app:layout_constraintTop_toBottomOf="@+id/textView40" />
-
-        <ImageView
-            android:id="@+id/imageView21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="1dp"
-            app:layout_constraintEnd_toStartOf="@+id/textView42"
-            app:layout_constraintStart_toEndOf="@+id/imageView20"
-            app:layout_constraintTop_toBottomOf="@+id/textView41"
-            app:srcCompat="@drawable/suitcase" />
-
-        <TextView
-            android:id="@+id/textView42"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="16dp"
-            android:text="2 Years"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView22"
-            app:layout_constraintStart_toEndOf="@+id/imageView21"
-            app:layout_constraintTop_toBottomOf="@+id/textView41" />
-
-        <ImageView
-            android:id="@+id/imageView22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="29dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView42"
-            app:layout_constraintEnd_toStartOf="@+id/textView43"
-            app:layout_constraintStart_toEndOf="@+id/textView42"
-            app:layout_constraintTop_toTopOf="@+id/textView42"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/star" />
-
-        <TextView
-            android:id="@+id/textView43"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="88dp"
-            android:text="4.8"
-            android:textSize="12dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView22"
-            app:layout_constraintEnd_toStartOf="@+id/guideline7"
-            app:layout_constraintStart_toEndOf="@+id/imageView22"
-            app:layout_constraintTop_toTopOf="@+id/imageView22"
-            app:layout_constraintVertical_bias="1.0"
-            tools:ignore="TextSizeCheck" />
-
-        <View
-            android:id="@+id/view4"
-            android:layout_width="290dp"
-            android:layout_height="1dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="61dp"
-            android:background="@color/black"
-            android:paddingStart="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView20" />
-
-        <TextView
-            android:id="@+id/textView44"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="84dp"
-            android:layout_marginTop="8dp"
-            android:text="$32,400"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view4" />
-
-        <ImageView
-            android:id="@+id/imageView23"
-            android:layout_width="15dp"
-            android:layout_height="16dp"
-            android:layout_marginStart="104dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="14dp"
-            app:layout_constraintEnd_toStartOf="@+id/textView45"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textView44"
-            app:layout_constraintTop_toBottomOf="@+id/view4"
-            app:srcCompat="@drawable/hearticon" />
-
-        <TextView
-            android:id="@+id/textView45"
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="72dp"
-            android:background="@drawable/recom_"
-            android:padding="10dp"
-            android:text="Chat"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view4"
-            tools:ignore="TextSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
